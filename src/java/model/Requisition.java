@@ -7,7 +7,15 @@ public class Requisition {
      int quantity;
      String requiredDate;
      String productionLine;
-     
+     int requisitionId;
+
+    public void setRequisitionId(int requisitionId) {
+        this.requisitionId = requisitionId;
+    }
+
+    public int getRequisitionId() {
+        return requisitionId;
+    }
      
     public String getrequiredDate() {
         return requiredDate;

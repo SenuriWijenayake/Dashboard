@@ -11,5 +11,14 @@
                 <result name="error">../www/reqError.jsp</result>
 	</action>
         
+        <action name="updateRequisition" class="action.RequisitionAction" method="updateRequisition">            
+		<result name="success">../www/viewExistingRequisitions.jsp</result>
+                <result name="error">../www/reqError.jsp</result>
+	</action>
+        
+        <action name="deleteRequisition" class="action.RequisitionAction" method="deleteRequisition">            
+		<result name="success">../www/deleteSuccess.jsp</result>
+                <result name="error">../www/reqError.jsp</result>
+	</action>
     </package>
 </struts>
