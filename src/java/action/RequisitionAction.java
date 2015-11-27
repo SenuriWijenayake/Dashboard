@@ -2,13 +2,14 @@ package action;
 
 import model.Requisition;
 import dbconnection.RequisitionConnection;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Map;
 
-public class RequisitionAction {
+
+public class RequisitionAction{
 
     public String materialName, requiredDate, productionLine, materialId, quantity, requisitionId, authorizedBy;
     public int matId, matQuantity, reqId;
+    private Map<String, Object> userSession;
 
     public String execute() {
 
@@ -42,4 +43,5 @@ public class RequisitionAction {
         RequisitionConnection.deleteReq(reqId);
         return "success";
     }
+
 }

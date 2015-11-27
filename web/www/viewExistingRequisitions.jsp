@@ -16,43 +16,46 @@
     <head>
 
         <title>View Existing Requisitions</title>
+        
     </head>
     <body>
-    <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-        url="jdbc:mysql://localhost/dashboard"
-        user="senuri" password="yes"/>
+        <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
+                           url="jdbc:mysql://localhost/dashboard"
+                           user="senuri" password="yes"/>
 
-    <sql:query dataSource="${snapshot}" var="result">
-        SELECT * from purchaserequisition;
-    </sql:query>
-        
-    <s:label type="text" value= "Material Requisitions" style="font-size: 20pt;"></s:label><br/><br/>
-        <table cellpadding="5" border=1>
+        <sql:query dataSource="${snapshot}" var="result">
+            SELECT * from purchaserequisition;
+        </sql:query>
 
-            <tr valign="bottom">
-                <th>Requisition Id</th>
-                <th>Material Id</th>
-                <th>Material Name</th>
-                <th>Quantity</th>
-                <th>Required Date</th>
-                <th>Authorized By</th>
-                <th></th>
-            </tr>
+        <s:label type="text" value= "Material Requisitions" style="font-size: 20pt;"></s:label><br/><br/>
+            <table cellpadding="5" border=1>
 
-        <c:forEach var="row" items="${result.rows}">
-            <tr valign="top">
-                <td><c:out value="${row.requisitionId}"/></td>
-                <td><c:out value="${row.materialId}"/></td>
-                <td><c:out value="${row.materialName}"/></td>
-                <td><c:out value="${row.quantity}"/></td>
-                <td><c:out value="${row.requiredDate}"/></td>
-                <td><c:out value="${row.authorizedBy}"/></td>
-                <td>Update</td>
-            </tr>
-        </c:forEach>
+                <tr valign="bottom">
+                    <th>Requisition Id</th>
+                    <th>Material Id</th>
+                    <th>Material Name</th>
+                    <th>Quantity</th>
+                    <th>Required Date</th>
+                    <th>Authorized By</th>
+                    <th></th>
+                </tr>
 
-    </table>
+            <c:forEach var="row" items="${result.rows}">
+                <tr valign="top">
+                    <td><c:out value="${row.requisitionId}"/></td>
+                    <td><c:out value="${row.materialId}"/></td>
+                    <td><c:out value="${row.materialName}"/></td>
+                    <td><c:out value="${row.quantity}"/></td>
+                    <td><c:out value="${row.requiredDate}"/></td>
+                    <td><c:out value="${row.authorizedBy}"/></td>
+                    <td><a href="updateReq.jsp">Update</a></td>                      
+                </tr>
+            </c:forEach>
 
-
-</body>
+        </table>
+        <br/><br/>
+        <a href="procurementIndex.jsp">
+        <s:label type="text" value= "Go to Home" style="font-size: 15pt;"></s:label> 
+        </a> <br>
+    </body>
 </html>

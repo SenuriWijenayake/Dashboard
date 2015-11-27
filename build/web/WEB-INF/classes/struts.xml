@@ -7,7 +7,7 @@
     <!-- Configuration for the default package. -->
     <package name="default" extends="struts-default">
         <action name="newRequisition" class="action.RequisitionAction" method="execute">            
-		<result name="success">../www/reqSuccess.jsp</result>
+		<result name="success">../www/viewExistingRequisitions.jsp</result>
                 <result name="error">../www/reqError.jsp</result>
 	</action>
         

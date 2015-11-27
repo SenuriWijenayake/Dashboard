@@ -15,6 +15,12 @@
     <body>
         <h1>Requisition Successfully Canceled!</h1>
         <br/><br/>
-        <a href="materialRequisition.jsp">Create New Requisition</a>
+        <a href="materialRequisition.jsp">
+            <s:label type="text" value= "Create New Requisition" style="font-size: 15pt;"></s:label> 
+        </a>
+        <br/><br/>
+        <a href="procurementIndex.jsp">
+            <s:label type="text" value= "Go to Home" style="font-size: 15pt;"></s:label> 
+        </a>
     </body>
 </html>

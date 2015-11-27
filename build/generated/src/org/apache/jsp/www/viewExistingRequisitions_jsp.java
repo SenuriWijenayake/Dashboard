@@ -82,43 +82,49 @@ public final class viewExistingRequisitions_jsp extends org.apache.jasper.runtim
       out.write("    <head>\n");
       out.write("\n");
       out.write("        <title>View Existing Requisitions</title>\n");
+      out.write("        \n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("    ");
+      out.write("        ");
       if (_jspx_meth_sql_setDataSource_0(_jspx_page_context))
         return;
       out.write("\n");
       out.write("\n");
-      out.write("    ");
+      out.write("        ");
       if (_jspx_meth_sql_query_0(_jspx_page_context))
         return;
       out.write("\n");
-      out.write("        \n");
-      out.write("    ");
+      out.write("\n");
+      out.write("        ");
       if (_jspx_meth_s_label_0(_jspx_page_context))
         return;
       out.write("<br/><br/>\n");
-      out.write("        <table cellpadding=\"5\" border=1>\n");
+      out.write("            <table cellpadding=\"5\" border=1>\n");
       out.write("\n");
-      out.write("            <tr valign=\"bottom\">\n");
-      out.write("                <th>Requisition Id</th>\n");
-      out.write("                <th>Material Id</th>\n");
-      out.write("                <th>Material Name</th>\n");
-      out.write("                <th>Quantity</th>\n");
-      out.write("                <th>Required Date</th>\n");
-      out.write("                <th>Authorized By</th>\n");
-      out.write("                <th></th>\n");
-      out.write("            </tr>\n");
+      out.write("                <tr valign=\"bottom\">\n");
+      out.write("                    <th>Requisition Id</th>\n");
+      out.write("                    <th>Material Id</th>\n");
+      out.write("                    <th>Material Name</th>\n");
+      out.write("                    <th>Quantity</th>\n");
+      out.write("                    <th>Required Date</th>\n");
+      out.write("                    <th>Authorized By</th>\n");
+      out.write("                    <th></th>\n");
+      out.write("                </tr>\n");
       out.write("\n");
-      out.write("        ");
+      out.write("            ");
       if (_jspx_meth_c_forEach_0(_jspx_page_context))
         return;
       out.write("\n");
       out.write("\n");
-      out.write("    </table>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("</body>\n");
+      out.write("        </table>\n");
+      out.write("        <br/><br/>\n");
+      out.write("        <a href=\"procurementIndex.jsp\">\n");
+      out.write("        ");
+      if (_jspx_meth_s_label_1(_jspx_page_context))
+        return;
+      out.write(" \n");
+      out.write("        </a> <br>\n");
+      out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -177,8 +183,8 @@ public final class viewExistingRequisitions_jsp extends org.apache.jasper.runtim
         }
         do {
           out.write("\n");
-          out.write("        SELECT * from purchaserequisition;\n");
-          out.write("    ");
+          out.write("            SELECT * from purchaserequisition;\n");
+          out.write("        ");
           int evalDoAfterBody = _jspx_th_sql_query_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -237,34 +243,34 @@ public final class viewExistingRequisitions_jsp extends org.apache.jasper.runtim
       if (_jspx_eval_c_forEach_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
           out.write("\n");
-          out.write("            <tr valign=\"top\">\n");
-          out.write("                <td>");
+          out.write("                <tr valign=\"top\">\n");
+          out.write("                    <td>");
           if (_jspx_meth_c_out_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_0, _jspx_page_context, _jspx_push_body_count_c_forEach_0))
             return true;
           out.write("</td>\n");
-          out.write("                <td>");
+          out.write("                    <td>");
           if (_jspx_meth_c_out_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_0, _jspx_page_context, _jspx_push_body_count_c_forEach_0))
             return true;
           out.write("</td>\n");
-          out.write("                <td>");
+          out.write("                    <td>");
           if (_jspx_meth_c_out_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_0, _jspx_page_context, _jspx_push_body_count_c_forEach_0))
             return true;
           out.write("</td>\n");
-          out.write("                <td>");
+          out.write("                    <td>");
           if (_jspx_meth_c_out_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_0, _jspx_page_context, _jspx_push_body_count_c_forEach_0))
             return true;
           out.write("</td>\n");
-          out.write("                <td>");
+          out.write("                    <td>");
           if (_jspx_meth_c_out_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_0, _jspx_page_context, _jspx_push_body_count_c_forEach_0))
             return true;
           out.write("</td>\n");
-          out.write("                <td>");
+          out.write("                    <td>");
           if (_jspx_meth_c_out_5((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_0, _jspx_page_context, _jspx_push_body_count_c_forEach_0))
             return true;
           out.write("</td>\n");
-          out.write("                <td>Update</td>\n");
-          out.write("            </tr>\n");
-          out.write("        ");
+          out.write("                    <td><a href=\"updateReq.jsp\">Update</a></td>                      \n");
+          out.write("                </tr>\n");
+          out.write("            ");
           int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -389,6 +395,26 @@ public final class viewExistingRequisitions_jsp extends org.apache.jasper.runtim
       return true;
     }
     _jspx_tagPool_c_out_value_nobody.reuse(_jspx_th_c_out_5);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_label_1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:label
+    org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_label_1 = (org.apache.struts2.views.jsp.ui.LabelTag) _jspx_tagPool_s_label_value_type_style_nobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
+    _jspx_th_s_label_1.setPageContext(_jspx_page_context);
+    _jspx_th_s_label_1.setParent(null);
+    _jspx_th_s_label_1.setDynamicAttribute(null, "type", new String("text"));
+    _jspx_th_s_label_1.setValue("Go to Home");
+    _jspx_th_s_label_1.setDynamicAttribute(null, "style", new String("font-size: 15pt;"));
+    int _jspx_eval_s_label_1 = _jspx_th_s_label_1.doStartTag();
+    if (_jspx_th_s_label_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_label_value_type_style_nobody.reuse(_jspx_th_s_label_1);
+      return true;
+    }
+    _jspx_tagPool_s_label_value_type_style_nobody.reuse(_jspx_th_s_label_1);
     return false;
   }
 }

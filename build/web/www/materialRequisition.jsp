@@ -18,8 +18,16 @@
            
            <s:label type="text" value= "Material Requisition Form" style="font-size: 20pt;"></s:label>
 		
-                <s:textfield type="text" name="materialId" label="Material Id" size="20"></s:textfield>
-                <s:textfield type="text" name="materialName" label="Material Name" size="20"></s:textfield>
+                <s:select label="Material Id"
+		list="{'1', '2', '3', '4', '5', '6'}" 
+		name="materialId" 
+		
+                />
+                <s:select label="Material Name"
+		list="{'Engine Block', 'ECU', 'Engine Mounts', 'Engine Heat Sensors', 'Engine Fuses', 'Thermo Valves'}" 
+		name="materialName" 
+		
+                />
                 <s:textfield type="text" name="quantity" label="Quantity" size="20"></s:textfield>
                 <s:textfield type="text" name="requiredDate" label="Required Date" size="20"></s:textfield>
                 <s:select label="Production Line" 
