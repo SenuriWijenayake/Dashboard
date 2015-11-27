@@ -1,10 +1,3 @@
-<%-- 
-    Document   : procurementIndex
-    Created on : Nov 27, 2015, 7:06:06 AM
-    Author     : Asus - PC
---%>
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
@@ -24,6 +17,9 @@
         </a> <br><br><br>
         <a href="updateReq.jsp">
             <s:label type="text" value= "Update Procurement Details" style="font-size: 15pt;"></s:label> 
+        </a> <br><br><br>
+        <a href="deleteRequisition.jsp">
+            <s:label type="text" value= "Delete Requisitions" style="font-size: 15pt;"></s:label> 
         </a> <br>
         
     </body>

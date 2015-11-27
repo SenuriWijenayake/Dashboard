@@ -15,8 +15,8 @@ public class RequisitionConnection {
     public static String addRequisition(Requisition requisition) {
         try {
             Connection conn = DB.getConnection();
-            String sql = "insert into purchaserequisition (materialId, materialName, quantity, requiredDate, productionLine)"
-                    + "values(?,?,?,?,?)";
+            String sql = "insert into purchaserequisition (materialId, materialName, quantity, requiredDate, productionLine, authorizedBy)"
+                    + "values(?,?,?,?,?,?)";
 
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setInt(1, requisition.getmaterialId());
@@ -24,6 +24,7 @@ public class RequisitionConnection {
             ps.setInt(3, requisition.getquantity());
             ps.setString(4, requisition.getrequiredDate());
             ps.setString(5, requisition.getproductionLine());
+            ps.setString(6, requisition.getAuthorizedBy());
 
             ps.executeUpdate();
             return "success";
@@ -74,30 +75,4 @@ public class RequisitionConnection {
 
     }
 
-    public static ArrayList<Requisition> viewRequisitions() {
-        try {
-            Connection conn = DB.getConnection();
-            String sql = "SELECT * FROM `purchaserequisition`";
-
-            PreparedStatement ps = conn.prepareStatement(sql);
-
-            ResultSet result = ps.executeQuery();
-            while (result.next()) {
-                Requisition requisition = new Requisition();
-                requisition.setRequisitionId(result.getInt("requisitionId"));
-                requisition.setmaterialId(result.getInt("materialId"));
-                requisition.setmaterialName(result.getString("materialName"));
-                requisition.setquantity(result.getInt("quantity"));
-                requisition.setrequiredDate(result.getString("requiredDate"));
-                requisition.setproductionLine(result.getString("productionLine"));
-                requisitions.add(requisition);
-            }
-
-            return requisitions;
-        } catch (Exception ie) {
-            ie.printStackTrace();
-            return null;
-        }
-
-    }
 }

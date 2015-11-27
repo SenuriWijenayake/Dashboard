@@ -8,7 +8,17 @@ public class Requisition {
      String requiredDate;
      String productionLine;
      int requisitionId;
+     String authorizedBy;
 
+    public void setAuthorizedBy(String authorizedBy) {
+        this.authorizedBy = authorizedBy;
+    }
+  
+    public String getAuthorizedBy() {
+        return authorizedBy;
+    }
+     
+     
     public void setRequisitionId(int requisitionId) {
         this.requisitionId = requisitionId;
     }

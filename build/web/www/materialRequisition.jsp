@@ -29,7 +29,7 @@
 		name="productionLine" 
 		value="5" 
                 />
-                <s:textfield type="text" name="authorizedPerson" label="Authorized Person" size="20"></s:textfield>
+                <s:textfield type="text" name="authorizedBy" label="Authorized Person" size="20"></s:textfield>
                 
 		<s:submit name="submit" label="Submit Requisition" align="center" action="newRequisition"></s:submit>
        </s:form> 

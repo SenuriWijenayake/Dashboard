@@ -53,9 +53,6 @@ public final class procurementIndex_jsp extends org.apache.jasper.runtime.HttpJs
 
       out.write("\n");
       out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
@@ -83,6 +80,12 @@ public final class procurementIndex_jsp extends org.apache.jasper.runtime.HttpJs
       out.write("        <a href=\"updateReq.jsp\">\n");
       out.write("            ");
       if (_jspx_meth_s_label_3(_jspx_page_context))
+        return;
+      out.write(" \n");
+      out.write("        </a> <br><br><br>\n");
+      out.write("        <a href=\"deleteRequisition.jsp\">\n");
+      out.write("            ");
+      if (_jspx_meth_s_label_4(_jspx_page_context))
         return;
       out.write(" \n");
       out.write("        </a> <br>\n");
@@ -179,6 +182,26 @@ public final class procurementIndex_jsp extends org.apache.jasper.runtime.HttpJs
       return true;
     }
     _jspx_tagPool_s_label_value_type_style_nobody.reuse(_jspx_th_s_label_3);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_label_4(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:label
+    org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_label_4 = (org.apache.struts2.views.jsp.ui.LabelTag) _jspx_tagPool_s_label_value_type_style_nobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
+    _jspx_th_s_label_4.setPageContext(_jspx_page_context);
+    _jspx_th_s_label_4.setParent(null);
+    _jspx_th_s_label_4.setDynamicAttribute(null, "type", new String("text"));
+    _jspx_th_s_label_4.setValue("Delete Requisitions");
+    _jspx_th_s_label_4.setDynamicAttribute(null, "style", new String("font-size: 15pt;"));
+    int _jspx_eval_s_label_4 = _jspx_th_s_label_4.doStartTag();
+    if (_jspx_th_s_label_4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_label_value_type_style_nobody.reuse(_jspx_th_s_label_4);
+      return true;
+    }
+    _jspx_tagPool_s_label_value_type_style_nobody.reuse(_jspx_th_s_label_4);
     return false;
   }
 }

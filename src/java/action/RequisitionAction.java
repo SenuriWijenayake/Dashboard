@@ -7,7 +7,7 @@ import java.util.List;
 
 public class RequisitionAction {
 
-    public String materialName, requiredDate, productionLine, materialId, quantity, requisitionId;
+    public String materialName, requiredDate, productionLine, materialId, quantity, requisitionId, authorizedBy;
     public int matId, matQuantity, reqId;
 
     public String execute() {
@@ -21,19 +21,9 @@ public class RequisitionAction {
         details.setquantity(matQuantity);
         details.setrequiredDate(requiredDate);
         details.setproductionLine(productionLine);
+        details.setAuthorizedBy(authorizedBy);
         RequisitionConnection.addRequisition(details);
         return "success";
-    }
-
-    public ArrayList<Requisition> viewAllRequisitions() {
-
-        ArrayList<Requisition> existingReqs = new ArrayList<Requisition>();
-        existingReqs = RequisitionConnection.viewRequisitions();
-        if (existingReqs != null) {
-            return existingReqs;
-        } else {
-            return null;
-        }
     }
 
     public String updateRequisition() {
@@ -48,7 +38,7 @@ public class RequisitionAction {
     public String deleteRequisition() {
 
         reqId = Integer.parseInt(requisitionId);
-       
+
         RequisitionConnection.deleteReq(reqId);
         return "success";
     }
