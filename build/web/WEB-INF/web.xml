@@ -9,12 +9,12 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
     <servlet>
-        <servlet-name>requisitionRetrieve</servlet-name>
-        <servlet-class>servlet.RequisitionRetrieve</servlet-class>
+        <servlet-name>totalServlet</servlet-name>
+        <servlet-class>totalServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>requisitionRetrieve</servlet-name>
-        <url-pattern>/requisitionRetrieve</url-pattern>
+        <servlet-name>totalServlet</servlet-name>
+        <url-pattern>/totalServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

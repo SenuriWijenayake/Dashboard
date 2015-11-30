@@ -1,15 +1,15 @@
 package action;
 
+import com.opensymphony.xwork2.ActionSupport;
 import model.Requisition;
 import dbconnection.RequisitionConnection;
-import java.util.Map;
 
 
-public class RequisitionAction{
+
+public class RequisitionAction extends ActionSupport{
 
     public String materialName, requiredDate, productionLine, materialId, quantity, requisitionId, authorizedBy;
     public int matId, matQuantity, reqId;
-    private Map<String, Object> userSession;
 
     public String execute() {
 
@@ -43,5 +43,6 @@ public class RequisitionAction{
         RequisitionConnection.deleteReq(reqId);
         return "success";
     }
+   
 
 }

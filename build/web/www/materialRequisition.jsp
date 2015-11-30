@@ -14,7 +14,7 @@
         <title>Material Requisition Form</title>
     </head>
     <body>
-       <s:form action="newRequisition" method="post">
+       <s:form action="newRequisition" method="post" name="requisition">
            
            <s:label type="text" value= "Material Requisition Form" style="font-size: 20pt;"></s:label>
 		
@@ -39,7 +39,7 @@
                 />
                 <s:textfield type="text" name="authorizedBy" label="Authorized Person" size="20"></s:textfield>
                 
-		<s:submit name="submit" label="Submit Requisition" align="center" action="newRequisition"></s:submit>
+		<s:submit type="submit"  name="submit" label="Submit Requisition" align="center" action="newRequisition"></s:submit>
        </s:form> 
     </body>
 </html>

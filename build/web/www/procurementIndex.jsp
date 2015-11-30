@@ -20,7 +20,12 @@
         </a> <br><br><br>
         <a href="deleteRequisition.jsp">
             <s:label type="text" value= "Delete Requisitions" style="font-size: 15pt;"></s:label> 
-        </a> <br>
-        
+        </a> <br><br><br>
+        <a href="placePurchaseOrder.jsp">
+            <s:label type="text" value= "Place Purchase Order" style="font-size: 15pt;"></s:label> 
+        </a> <br><br><br>
+        <a href="viewPurchaseOrders.jsp">
+            <s:label type="text" value= "View Purchase Orders" style="font-size: 15pt;"></s:label> 
+        </a> <br><br><br>
     </body>
 </html>

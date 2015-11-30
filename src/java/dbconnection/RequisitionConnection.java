@@ -4,14 +4,10 @@ import db.DB;
 import model.Requisition;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
 
 public class RequisitionConnection {
 
-    private static ArrayList<Requisition> requisitions = new ArrayList<Requisition>();
-
+    
     public static String addRequisition(Requisition requisition) {
         try {
             Connection conn = DB.getConnection();

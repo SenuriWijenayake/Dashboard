@@ -88,8 +88,19 @@ public final class procurementIndex_jsp extends org.apache.jasper.runtime.HttpJs
       if (_jspx_meth_s_label_4(_jspx_page_context))
         return;
       out.write(" \n");
-      out.write("        </a> <br>\n");
-      out.write("        \n");
+      out.write("        </a> <br><br><br>\n");
+      out.write("        <a href=\"placePurchaseOrder.jsp\">\n");
+      out.write("            ");
+      if (_jspx_meth_s_label_5(_jspx_page_context))
+        return;
+      out.write(" \n");
+      out.write("        </a> <br><br><br>\n");
+      out.write("        <a href=\"viewPurchaseOrders.jsp\">\n");
+      out.write("            ");
+      if (_jspx_meth_s_label_6(_jspx_page_context))
+        return;
+      out.write(" \n");
+      out.write("        </a> <br><br><br>\n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
@@ -202,6 +213,46 @@ public final class procurementIndex_jsp extends org.apache.jasper.runtime.HttpJs
       return true;
     }
     _jspx_tagPool_s_label_value_type_style_nobody.reuse(_jspx_th_s_label_4);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_label_5(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:label
+    org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_label_5 = (org.apache.struts2.views.jsp.ui.LabelTag) _jspx_tagPool_s_label_value_type_style_nobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
+    _jspx_th_s_label_5.setPageContext(_jspx_page_context);
+    _jspx_th_s_label_5.setParent(null);
+    _jspx_th_s_label_5.setDynamicAttribute(null, "type", new String("text"));
+    _jspx_th_s_label_5.setValue("Place Purchase Order");
+    _jspx_th_s_label_5.setDynamicAttribute(null, "style", new String("font-size: 15pt;"));
+    int _jspx_eval_s_label_5 = _jspx_th_s_label_5.doStartTag();
+    if (_jspx_th_s_label_5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_label_value_type_style_nobody.reuse(_jspx_th_s_label_5);
+      return true;
+    }
+    _jspx_tagPool_s_label_value_type_style_nobody.reuse(_jspx_th_s_label_5);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_label_6(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:label
+    org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_label_6 = (org.apache.struts2.views.jsp.ui.LabelTag) _jspx_tagPool_s_label_value_type_style_nobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
+    _jspx_th_s_label_6.setPageContext(_jspx_page_context);
+    _jspx_th_s_label_6.setParent(null);
+    _jspx_th_s_label_6.setDynamicAttribute(null, "type", new String("text"));
+    _jspx_th_s_label_6.setValue("View Purchase Orders");
+    _jspx_th_s_label_6.setDynamicAttribute(null, "style", new String("font-size: 15pt;"));
+    int _jspx_eval_s_label_6 = _jspx_th_s_label_6.doStartTag();
+    if (_jspx_th_s_label_6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_label_value_type_style_nobody.reuse(_jspx_th_s_label_6);
+      return true;
+    }
+    _jspx_tagPool_s_label_value_type_style_nobody.reuse(_jspx_th_s_label_6);
     return false;
   }
 }
