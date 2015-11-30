@@ -3,9 +3,8 @@ package action;
 import com.opensymphony.xwork2.ActionSupport;
 import model.PurchaseOrder;
 import dbconnection.PurchaseOrderConnection;
-import java.io.PrintWriter;
+import dbconnection.RequisitionConnection;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class PurchaseOrderAction extends ActionSupport {
@@ -48,6 +47,7 @@ public class PurchaseOrderAction extends ActionSupport {
                 newOrder.setRequiredDate(requiredDate);
                 newOrder.setTotalPrice(unitPrice * matQuantity);
                 PurchaseOrderConnection.addOrder(newOrder);
+                RequisitionConnection.selectRequisitionsToDelete(matId);
                 order.add(newOrder);
 
                 return "success";

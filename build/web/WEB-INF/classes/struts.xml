@@ -9,6 +9,7 @@
         <action name="newRequisition" class="action.RequisitionAction" method="execute">            
             <result name="success">../www/viewExistingRequisitions.jsp</result>
             <result name="error">../www/reqError.jsp</result>
+            <result name="validationError">../www/validationError.jsp</result>
         </action>
               
         <action name="getTotal" class="action.PurchaseOrderAction" method="getTotalQuantity">            

@@ -70,5 +70,21 @@ public class RequisitionConnection {
         }
 
     }
+    
+    public static void selectRequisitionsToDelete(int materialId) {
+        try {
+            Connection conn = DB.getConnection();
+            String sql = "delete from purchaserequisition where materialId=?";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, materialId);
+            ps.executeUpdate();
+            
+
+        } catch (Exception ie) {
+            ie.printStackTrace();
+            
+        }
+
+    }
 
 }

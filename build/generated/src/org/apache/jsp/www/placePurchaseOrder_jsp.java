@@ -12,7 +12,6 @@ public final class placePurchaseOrder_jsp extends org.apache.jasper.runtime.Http
   private static java.util.List<String> _jspx_dependants;
 
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_form_name_method_action;
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_label_value_type_style_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_submit_value_type_name_align_action_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_select_name_list_label_nobody;
 
@@ -24,14 +23,12 @@ public final class placePurchaseOrder_jsp extends org.apache.jasper.runtime.Http
 
   public void _jspInit() {
     _jspx_tagPool_s_form_name_method_action = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _jspx_tagPool_s_label_value_type_style_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_s_submit_value_type_name_align_action_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_s_select_name_list_label_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
   public void _jspDestroy() {
     _jspx_tagPool_s_form_name_method_action.release();
-    _jspx_tagPool_s_label_value_type_style_nobody.release();
     _jspx_tagPool_s_submit_value_type_name_align_action_nobody.release();
     _jspx_tagPool_s_select_name_list_label_nobody.release();
   }
@@ -112,11 +109,47 @@ public final class placePurchaseOrder_jsp extends org.apache.jasper.runtime.Http
       do {
         out.write("\n");
         out.write("\n");
-        out.write("            ");
-        if (_jspx_meth_s_label_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
-          return true;
+        out.write("            <label style=\"font-size: 20pt;\">Place Purchase Order</label>\n");
+        out.write("            <br/><br/>\n");
+        out.write("                <table cellpadding=\"5\" border=1>\n");
         out.write("\n");
+        out.write("                    <tr valign=\"bottom\">\n");
+        out.write("                        <th>Material Id</th>\n");
+        out.write("                        <th>Material Name</th>\n");
         out.write("\n");
+        out.write("                    </tr>\n");
+        out.write("                    <tr>\n");
+        out.write("                        <td>1</td>\n");
+        out.write("                        <td>Engine Block</td>\n");
+        out.write("\n");
+        out.write("                    </tr>\n");
+        out.write("                    <tr>\n");
+        out.write("                        <td>2</td>\n");
+        out.write("                        <td>ECU</td>\n");
+        out.write("\n");
+        out.write("                    </tr>\n");
+        out.write("                    <tr>\n");
+        out.write("                        <td>3</td>\n");
+        out.write("                        <td>Engine Mounts</td>\n");
+        out.write("\n");
+        out.write("                    </tr>\n");
+        out.write("                    <tr>\n");
+        out.write("                        <td>4</td>\n");
+        out.write("                        <td>Engine Heat Sensors</td>\n");
+        out.write("\n");
+        out.write("                    </tr>\n");
+        out.write("                    <tr>\n");
+        out.write("                        <td>5</td>\n");
+        out.write("                        <td>Engine Fuses</td>\n");
+        out.write("\n");
+        out.write("                    </tr>\n");
+        out.write("                    <tr>\n");
+        out.write("                        <td>6</td>\n");
+        out.write("                        <td>Thermo Valves</td>\n");
+        out.write("\n");
+        out.write("                    </tr>\n");
+        out.write("\n");
+        out.write("                </table>\n");
         out.write("            ");
         if (_jspx_meth_s_select_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
           return true;
@@ -125,7 +158,7 @@ public final class placePurchaseOrder_jsp extends org.apache.jasper.runtime.Http
         if (_jspx_meth_s_submit_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
           return true;
         out.write("\n");
-        out.write("           \n");
+        out.write("\n");
         out.write("        ");
         int evalDoAfterBody = _jspx_th_s_form_0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -139,26 +172,6 @@ public final class placePurchaseOrder_jsp extends org.apache.jasper.runtime.Http
       return true;
     }
     _jspx_tagPool_s_form_name_method_action.reuse(_jspx_th_s_form_0);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_label_0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_form_0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:label
-    org.apache.struts2.views.jsp.ui.LabelTag _jspx_th_s_label_0 = (org.apache.struts2.views.jsp.ui.LabelTag) _jspx_tagPool_s_label_value_type_style_nobody.get(org.apache.struts2.views.jsp.ui.LabelTag.class);
-    _jspx_th_s_label_0.setPageContext(_jspx_page_context);
-    _jspx_th_s_label_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
-    _jspx_th_s_label_0.setDynamicAttribute(null, "type", new String("text"));
-    _jspx_th_s_label_0.setValue("Material Requisition Form");
-    _jspx_th_s_label_0.setDynamicAttribute(null, "style", new String("font-size: 20pt;"));
-    int _jspx_eval_s_label_0 = _jspx_th_s_label_0.doStartTag();
-    if (_jspx_th_s_label_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_label_value_type_style_nobody.reuse(_jspx_th_s_label_0);
-      return true;
-    }
-    _jspx_tagPool_s_label_value_type_style_nobody.reuse(_jspx_th_s_label_0);
     return false;
   }
 
